@@ -1,5 +1,4 @@
 @file:Suppress("SpellCheckingInspection")
-
 package LeetcodeSolutions
 
 /**
