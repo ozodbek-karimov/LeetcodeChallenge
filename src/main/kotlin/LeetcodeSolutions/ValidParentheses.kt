@@ -31,10 +31,11 @@ fun isValid(s: String): Boolean {
     for (char in s) {
         if (brackets.keys.contains(char)) {
             stack.add(char)
-        } else if (stack.isNotEmpty() && brackets[stack.removeAt(stack.size - 1)] != char) {
+        } else if (stack.isEmpty() || brackets[stack.removeAt(stack.size - 1)] != char) {
             return false
         }
     }
 
     return stack.isEmpty()
 }
+
