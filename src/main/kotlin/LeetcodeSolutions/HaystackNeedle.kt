@@ -1,5 +1,6 @@
 package LeetcodeSolutions
 
+
 /**
 @Creator: Karimov Ozodbek
 @Date 02/02/2023
@@ -22,20 +23,15 @@ fun strStr(haystack: String, needle: String): Int {
     val haystackLength = haystack.length
     val needleLength = needle.length
 
-    // Check if needle is an empty string
     if (needleLength == 0) {
         return 0
     }
 
-    // Iterate through haystack
     for (i in 0..haystackLength - needleLength) {
-        // Check for a potential match
         if (haystack.substring(i, i + needleLength) == needle) {
             return i
         }
     }
-
-    // If no match is found
     return -1
 }
 
