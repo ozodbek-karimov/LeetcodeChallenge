@@ -21,6 +21,7 @@ fun main() {
 fun twoSum(nums: IntArray, target: Int): IntArray {
 
     /** BRUTE FORCE
+
         val n = nums.size
         for (i in 0 until n - 1) {
             for (j in i + 1 until n) {
@@ -29,15 +30,19 @@ fun twoSum(nums: IntArray, target: Int): IntArray {
                 }
             }
         }
-*/
-    val numMap = HashMap<Int, Int>()
 
-    for ((index, num) in nums.withIndex()) {
-        val complement = target - num
-        if (numMap.containsKey(complement)) {
-            return intArrayOf(numMap[complement]!!, index)
+    */
+
+    //  nums = [2, 7, 11, 15]   9
+
+    val seen = hashMapOf<Int, Int>()
+
+    for(i in nums.indices){
+        val checkNumber = target - nums[i]
+        if(seen[checkNumber] != null){
+            return intArrayOf(i, seen[checkNumber]!!)
         }
-        numMap[num] = index
+        seen[nums[i]] = i
     }
 
     return intArrayOf()
