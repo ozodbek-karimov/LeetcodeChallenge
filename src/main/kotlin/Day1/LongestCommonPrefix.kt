@@ -20,19 +20,17 @@ fun main() {
 
 }
 
-fun longestCommonPrefix(array: Array<String>): String {
-    array.sort()
-
-    val start = array.first()
-    val end = array.last()
-    val result = StringBuilder()
-
-    start.forEachIndexed { index, _ ->
-        if (start[index] == end[index])
-            result.append(start[index])
-        else
-            return result.toString()
+fun longestCommonPrefix(strs: Array<String>): String {
+    val pref = strs[0]
+    val w = StringBuilder()
+    for (i in pref.indices) {
+        for (j in 1 until strs.size) {
+            if(i>=strs[j].length || pref[i]!=strs[j][i]) {
+                return w.toString()
+            }
+        }
+        w.append(pref[i])
     }
 
-    return result.toString()
+    return w.toString()
 }
