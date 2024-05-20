@@ -12,18 +12,14 @@ public class LengthOfLastWord {
 
     public static int lengthOfLastWord(String s) {
 
-        int length = 0;
-        int i = s.length() - 1;
+        s = s.trim();
+        int counter = 0;
 
-        while (i >= 0 && s.charAt(i) == ' ') {
-            i--;
+        for (int i = s.length()-1; i >= 0; i--){
+            if (s.charAt(i) == ' ') break;
+            counter++;
         }
 
-        while (i >= 0 && s.charAt(i) != ' ') {
-            length++;
-            i--;
-        }
-
-        return length;
+        return counter;
     }
 }
