@@ -1,6 +1,4 @@
-package Day2;
-
-import java.util.Arrays;
+package JavaChallenge;
 
 public class SingleNumber {
 

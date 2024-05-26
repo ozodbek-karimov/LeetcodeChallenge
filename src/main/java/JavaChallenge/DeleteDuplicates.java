@@ -1,4 +1,4 @@
-package Day2;
+package JavaChallenge;
 
 public class DeleteDuplicates {
 

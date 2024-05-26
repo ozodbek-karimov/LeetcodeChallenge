@@ -1,4 +1,4 @@
-package Day2;
+package JavaChallenge;
 
 import java.util.HashMap;
 import java.util.HashSet;
