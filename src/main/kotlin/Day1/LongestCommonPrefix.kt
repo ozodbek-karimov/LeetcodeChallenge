@@ -1,7 +1,5 @@
 package Day1
 
-import LeetcodeSolutions.strStr
-
 /**
  *Creator: Karimov Ozodbek
  *Date 02/02/2023

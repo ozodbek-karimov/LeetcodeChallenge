@@ -1,6 +1,4 @@
-package LeetcodeSolutions
-
-import kotlin.math.max
+package LeetCodeSolutions
 
 /**
 @Creator: Karimov Ozodbek

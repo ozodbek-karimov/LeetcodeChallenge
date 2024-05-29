@@ -1,5 +1,5 @@
 @file:Suppress("SpellCheckingInspection")
-package LeetcodeSolutions
+package LeetCodeSolutions
 
 /**
 @Creator: Karimov Ozodbek

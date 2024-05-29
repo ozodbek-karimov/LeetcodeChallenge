@@ -1,4 +1,4 @@
-package LeetcodeSolutions
+package LeetCodeSolutions
 
 import java.lang.StringBuilder
 
