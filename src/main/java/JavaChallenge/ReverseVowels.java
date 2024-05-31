@@ -11,6 +11,7 @@ public class ReverseVowels {
         System.out.println(reverseVowels(str1));
         System.out.println(reverseVowels(str2));
 
+
     }
 
     public static String reverseVowels(String s) {
