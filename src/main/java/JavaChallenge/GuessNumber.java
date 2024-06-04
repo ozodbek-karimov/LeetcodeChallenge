@@ -15,6 +15,6 @@ public class GuessNumber {
 //            else if(gussRes==-1) end=mid-1;
 //            else if(guess(gussRes)==1) start=mid+1;
 //        }
-//        return -1;
+        return -1;
     }
 }
